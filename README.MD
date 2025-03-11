@@ -31,9 +31,9 @@ When starting from scratch, you need to:
 osName=Windows Server 2025 Standard RU ($date) - GameReady Driver
     # Short name without spaces and special characters prohibited in the file system. Will be used as the unique name for the final file and mount point.
 name=win25stru_game
-	# Build module. If you plan to use it in one mode always, it's better to specify it in scripts/winbuilder.conf.
+	# Build module. If you plan to use it in one mode always, it's better to specify it in conf/winbuilder.conf.
 builder=virt_win
-	# Upload module. Also better to specify in scripts/winbuilder.conf in the [DEFAULTS] section if you don't plan to change it often.
+	# Upload module. Also better to specify in conf/winbuilder.conf in the [DEFAULTS] section if you don't plan to change it often.
 uploader=glance
     # Path where the image file will be saved.
 pathSave=/opt/client-resources
@@ -43,7 +43,7 @@ pathIso=./ISO/win25ru.iso
 pathUnattend=./elements/windows_general/unnatend/2025.xml
 	# Optional: Path to the WinPE overlay, which will be deployed on top of the clean WinPE image.
         #             Planned to be removed and the overlay will be generated automatically based on partition parameters.
-pathWinPE=./scripts/resources/winpe
+pathWinPE=./resources/winpe
 	# Name of the Windows edition as specified in the WIM archive.
 editionName=Windows Server 2025 SERVERSTANDARD
     # Image size used during the build stage.
@@ -85,7 +85,7 @@ filesystem=ntfs
 system=true
 ```
 4. Run <Username>-openrc.sh from OpenStack to make automatic upload in Glance available.
-5. Run the ```./scripts/buildImage.py ./path/to/windows.config``` script with the image config specified. The build has started.  
+5. Run the ```./buildImage.py ./path/to/windows.config``` script with the image config specified. The build has started.  
 6. Through SPICE clients, you can connect to the port specified in spicePort. Catch incorrect behavior, debug elements.  
 7. The image is built and uploaded. You can test it on servers.  
 
@@ -94,7 +94,7 @@ system=true
 All ready-made image configs are located in the `/images/` directory. You can run them as follows:  
 ```
 cd <repository root>/
-sudo ./scripts/buildImage.py ./images/base/2022StandardRu_gameready.conf
+sudo ./buildImage.py ./images/base/2022StandardRu_gameready.conf
 ```
 And optionally, manual upload. The image will be uploaded automatically if the environment variables (openstack.rc) for connecting to OpenStack are specified:  
 ```
@@ -144,9 +144,9 @@ installDrivers -path_drv "C:/my/drivers/folder" -filter "*2022*"
 
 ### 5. Modularity:
 
-Build algorithm modules are available in `./scripts/builders`  
-Image upload modules are available in `./scripts/uploaders`  
-Integration modules are available in `./scripts/integrations`  
+Build algorithm modules are available in `./lib/builders`  
+Image upload modules are available in `./lib/uploaders`  
+Integration modules are available in `./lib/integrations`  
   
   
 Similiar projects:  

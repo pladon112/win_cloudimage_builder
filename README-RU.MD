@@ -26,9 +26,9 @@ win-cloudimage-builder позволяет в автоматическом реж
 osName=Windows Server 2025 Standard RU ($date) - GameReady Driver
     #Короткое имя без пробелов и специальных символов, запрещенных в файловой системе. Будет использоваться как уникальное имя конечного файла и точки монтирования
 name=win25stru_game
-	#Модуль для сборки. Если планируется использовать в одном режиме всегда - лучше указать в scripts/winbuilder.conf
+	#Модуль для сборки. Если планируется использовать в одном режиме всегда - лучше указать в conf/winbuilder.conf
 builder=virt_win
-	#Модуль для выгрузки. Так же лучше указать в scripts/winbuilder.conf в секции [DEFAULTS], если не планируется часто изменять
+	#Модуль для выгрузки. Так же лучше указать в conf/winbuilder.conf в секции [DEFAULTS], если не планируется часто изменять
 uploader=glance
     #Путь, по которому будет сохранен файл образа
 pathSave=/opt/client-resources
@@ -38,7 +38,7 @@ pathIso=./ISO/win25ru.iso
 pathUnattend=./elements/windows_general/unnatend/2025.xml
 	#Опционально: Путь к оверлею WinPE, который будет развернут поверх чистого WinPE образа. 
         #             Планируется убрать и генерировать оверлей автоматически в зависимости от параметров разделов.
-pathWinPE=./scripts/resources/winpe
+pathWinPE=./resources/winpe
 	#Название редакции Windows так же, как указано в архиве WIM
 editionName=Windows Server 2025 SERVERSTANDARD
     #Размер образа используемый на стадии сборки.
@@ -80,7 +80,7 @@ filesystem=ntfs
 system=true
 ```
 4. Запустить <Username>-openrc.sh, который Вы можете получить в OpenStack Horizon для возможности автоматической загрузки в Horizon.
-5. Запустить ```./scripts/buildImage.py ./path/to/windows.config``` скрипт с указанием конфига образа. Сборка началась.  
+5. Запустить ```./buildImage.py ./path/to/windows.config``` скрипт с указанием конфига образа. Сборка началась.  
 6. Через SPICE клиенты можем подключиться по указанному в spicePort порту. Отлавливаем некорректное поведение, отлаживаем элементы.  
 7. Образ собран и залит. Можно тестировать на серверах.  
 
@@ -88,7 +88,7 @@ system=true
 Все готовые конфиги образов лежат в /images/ каталоге. Запустить можно следующим образом:  
 ```
 cd <корень репозитория>/
-sudo ./scripts/buildImage.py ./images/base/2022StandardRu_gameready.conf
+sudo ./buildImage.py ./images/base/2022StandardRu_gameready.conf
 ```
 И по желанию ручной аплоад. Образ и так будет залит, если указаны переменные окружения (openstack.rc) для подключения к OpenStack:  
 ```
@@ -136,9 +136,9 @@ installDrivers -path_drv "C:/my/drivers/folder" -filter "*2022*"
 ```
 
 ### 5. Модульность:
-Модули алгоритмов сборки доступны в `./scripts/builders`   
-Модули выгрузки образов сборки в `./scripts/uploaders`  
-Модули интеграций доступны в `./scripts/integrations`  
+Модули алгоритмов сборки доступны в `./lib/builders`   
+Модули выгрузки образов сборки в `./lib/uploaders`  
+Модули интеграций доступны в `./lib/integrations`  
 
 Similiar projects:  
 [Cloudbase windows-imaging-tools](https://github.com/cloudbase/windows-imaging-tools)  
