@@ -1,4 +1,4 @@
-from buildImageLib import *
+from lib.buildImageLib import *
     
 class imageRunner(Image):
     def __init__(self, imageconfig):

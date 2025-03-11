@@ -1,4 +1,4 @@
-from buildImageLib import *
+from lib.buildImageLib import *
 from glanceclient import Client
 
 def start(image):

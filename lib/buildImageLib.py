@@ -31,7 +31,7 @@ if (os.path.isfile(pathDefaultConfig)):
     configFile.read(pathDefaultConfig)
     i=0
     for intModule in configFile['INTEGRATIONS']:
-        intModuleName = f"integrations.{intModule}"
+        intModuleName = f"lib.integrations.{intModule}"
         intModules.append(importlib.import_module(intModuleName))
         integrations.append(intModules[i].integrator())
         i+=1
